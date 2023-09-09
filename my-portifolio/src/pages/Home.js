@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import backgroundImage from '../6.jpg';
 import RotatingMandala from '../components/Mandala';
+import TextRotator from '../components/TextRotator';
 
 const HomeContainer = styled.div`
   display: flex;
@@ -14,6 +15,9 @@ const HomeContainer = styled.div`
   background-size: contain;
   background-position: center;
   overflow: hidden;
+`;
+const Div1 = styled.div`
+  display: none;
 `;
 
 const ParallaxContent = styled.div`
@@ -141,7 +145,7 @@ function Home() {
       <InfoBox>
       <Title>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-          Ruan Lima - Full Stack Developer
+        <TextRotator />
           
         </motion.div>
       </Title>
@@ -164,10 +168,14 @@ function Home() {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever It has survived not only five centuries, but also the leap into electronic but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
 
         </motion.div>
+        
       </Description>
       </InfoBox>
+      <Div1>
+
       <InfoBox>
       </InfoBox>
+      </Div1>
       <RotatingMandala />
       </ParallaxContent>
     </HomeContainer>

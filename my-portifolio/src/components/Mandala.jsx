@@ -15,7 +15,7 @@ const Mandala = styled.div`
   width: 600px;
   height: 600px;
   position: absolute;
-  left: -440px;
+  left: -340px;
   bottom: -300px;
   background-image: url(${backgroundImage});
   background-size: cover;
